@@ -1,4 +1,6 @@
 local HttpService = game:GetService("HttpService")
+-- universal exploit api
+local universalApi = game:HttpGetAsync("https://raw.githubusercontent.com/LoukaMB/SynapseX/master/script/compatibility_layer.lua",false)
 api = {}
 
 api.parseSearch = function (searchTerm)
