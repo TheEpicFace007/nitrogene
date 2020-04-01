@@ -16,5 +16,12 @@ api.parseSearch = function (searchTerm)
         -- TODO : SUPPORT MULTIPLE PAGE. IT SHOULD BE EASY TO DO
         Body = "q=site%3Apastebin.com+" .. searchTerm 
     })
+    tostring(searchResult)
+    local paste = {}
+    for k,v in string.gsub(searchResult,"https://www.pastebin.com/[%a-%d]") do
+        table.insert(paste,#paste+1,k)
+    end
+    print(repr(paste))
 end
 
+api.parseSearch("infinite yield")
