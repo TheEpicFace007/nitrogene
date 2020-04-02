@@ -1,6 +1,7 @@
 -- this code probably isnt the most elegant
 -- butidontcarelolitworks
 -- created by MintyLatios aka Nebula
+--  https://v3rmillion.net/showthread.php?tid=938167
 if(shared.RoStrap)then return shared.RoStrap end
 function getGithubSource(link) -- credit to rostrap team for part of this
 	local Website, Directory = link:match("^(https://[raw%.]*github[usercontent]*%.com/)(.+)")
